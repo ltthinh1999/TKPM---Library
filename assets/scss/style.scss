@@ -1,0 +1,169 @@
+@import './mixin';
+@import './reset';
+@import './variable';
+@import './Homepage/homepage';
+@import './Search/search';
+@import './News/news';
+@import './Rule/rule';
+@import './Help/help';
+@import './form-style';
+@import './Account/borrowingmanagement';
+@import './Livechat/livechat';
+.container {
+    max-width: 1366px !important;
+}
+
+.container-inner {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: $fontFamily-Muli;
+}
+
+.account-btn {
+    display: none;
+}
+
+#homepage,
+#search,
+#library,
+#rule,
+#help,
+#new,
+#response,
+#accountmanagement,
+#borrowwingmanagement, #login , #borrow ,#admin,#register,#accountmanagement,#forgotPassword,#reset-password ,#resetPassword{
+    header {
+        background-image: linear-gradient(#7A00B3, #0E0EB3);
+        nav {
+            padding: 10px 0px;
+            //margin-bottom: 15px;
+            background-image: linear-gradient(rgb(62, 0, 119), #0E0EB3);
+            .nav-left {
+                img {
+                    height: 60px;
+                    width: 70px;
+                    margin-right: 50px;
+                }
+                ul {
+                    list-style: none;
+                    text-decoration: none;
+                    li {
+                        padding:0 15px;
+                        //border-right: 1px solid white;
+
+
+                        a {
+                            text-decoration: none;
+                            font-size: 18px;
+                            color: white;
+                            font-weight: 600;
+                            &:hover {
+                                color: $blueDark;
+                                text-decoration: none;
+                            }
+                            // &:active {
+                            //     color: $blueDark;
+                            //     &::before {
+                            //         opacity: 1;
+                            //         transform: scaleX(1);
+                            //         text-decoration: none;
+                            //     }
+                            // }
+                        }
+                    }
+
+                    li:nth-child(5){
+                        border-right:unset ;
+                    }
+                }
+            }
+            // .active {
+            //     color: #ffef2d !important;
+            // }
+            .nav-right {
+                #my-form input::-webkit-search-decoration,
+                #my-form input::-webkit-search-cancel-button {
+                    display: none;
+                }
+                #my-form input[type=search] {
+                    width: 15px;
+                    padding-left: 10px;
+                    color: transparent;
+                    cursor: pointer;
+                    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+                    border: solid 1px #ccc;
+                    padding: 9px 10px 9px 32px;
+                    //width: 55px;
+                    -webkit-border-radius: 10em;
+                    -moz-border-radius: 10em;
+                    border-radius: 10em;
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    transition: all .5s;
+                    -webkit-appearance: textfield;
+                    font-family: inherit;
+                    font-size: 100%;
+                }
+                #my-form input[type=search]:hover {
+                    background-color: #fff;
+                }
+                #my-form input[type=search]:focus {
+                    width: 200px;
+                    padding-left: 32px;
+                    color: #000;
+                    background-color: #fff;
+                    cursor: auto;
+                }
+                #my-form input:-moz-placeholder {
+                    color: transparent;
+                }
+                #my-form input::-webkit-input-placeholder {
+                    color: transparent;
+                }
+                .login-btn {
+                    padding: 5px 15px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    border: 2px solid $blueDark;
+                    color: white !important;
+                    text-decoration: none;
+                    &:hover {
+                        // background-image: linear-gradient(#FFD39A, #E46BFF);
+                        background-color: #5945FF;
+                    }
+                }
+            }
+        }
+        .banner {
+            img {
+                max-width: 1172px;
+            }
+        }
+    }
+    footer {
+        height: 120px;
+        @include flexCustom(flex, center, center);
+        background-image: linear-gradient(rgb(62, 0, 119), #0E0EB3);
+        color: white;
+        .content {
+            @include flexCustom(flex, center, center);
+            flex-direction: column;
+        }
+        p{
+            font-size: 18px;
+            color: white;
+        }
+    }
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 0 !important;
+}

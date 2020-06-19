@@ -1,0 +1,985 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#homepage .body {
+  margin-bottom: 20px;
+}
+
+#homepage .body .search,
+#homepage .body .info {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+#homepage .body .search .heading-title,
+#homepage .body .info .heading-title {
+  color: #0E00A6;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#homepage .body .search input {
+  width: 70%;
+}
+
+#homepage .body .info ul li {
+  width: 40%;
+}
+
+#homepage .body .news .heading-title {
+  color: #0E00A6;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#homepage .body .news .post {
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 5px;
+  -webkit-box-shadow: 5px 5px #888888;
+          box-shadow: 5px 5px #888888;
+}
+
+#homepage .body .news .post img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#homepage .body .news .post .title {
+  color: #5D26F0;
+  font-weight: 500;
+  font-family: 'Alatsi', sans-serif;
+  font-size: 18px;
+}
+
+#formLogin input {
+  padding: 10px 0px 10px 20px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+#formLogin input:nth-child(3) {
+  background-color: #131254;
+  color: white;
+}
+
+#search .body .content .top {
+  margin-bottom: 20px;
+}
+
+#search .body .content .top .heading-title {
+  color: #131254;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#search .body .content .top form input {
+  width: 40%;
+}
+
+#search .body .content .top .filter .filter-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#search .body .content .top .filter .filter-btns .btn-group button {
+  color: #2096ff !important;
+}
+
+#search .body .content .list-books .book {
+  -webkit-box-shadow: 10px 10px 8px #888888;
+          box-shadow: 10px 10px 8px #888888;
+  background-color: #c0d8db;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #131254;
+  padding: 20px 0 5px 0;
+}
+
+#search .body .content .list-books .book .book-img img {
+  width: 215px;
+  height: 300px;
+}
+
+#search .body .content .list-books .book .book-info h1 {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#search .body .content .list-books .book .book-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #131254;
+}
+
+#search .body .content .list-books .book .book-info .borrowBookBtn {
+  padding: 10px 20px;
+  background-color: #131254;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#borrow .checked {
+  color: orange;
+}
+
+#borrow .book {
+  margin-bottom: 20px;
+}
+
+#borrow .book .book-img img {
+  width: 90%;
+}
+
+#borrow .book .book-info h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#borrow .book .book-info h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+#new .body .content .top {
+  margin-bottom: 20px;
+}
+
+#new .body .content .top .heading-title {
+  color: #131254;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#new .body .content .top input {
+  padding: 10px 0px 10px 20px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+  outline: none;
+}
+
+#new .body .content .filter .filter-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#new .body .content .list-news .new {
+  -webkit-box-shadow: 10px 10px 8px #888888;
+          box-shadow: 10px 10px 8px #888888;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #131254;
+  padding: 5px 0 5px 0;
+}
+
+#new .body .content .list-news .new .new-img img {
+  width: 90%;
+}
+
+#new .body .content .list-news .new .new-info h1 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#new .body .content .list-news .new .new-info h3 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #131254;
+}
+
+#new .body .content .list-news .new .new-info .detailNewBtn {
+  padding: 10px 20px;
+  background-color: #131254;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#new .body .content .list-news .new .new-info .detailNewBtn:hover {
+  text-decoration: none;
+}
+
+#rule .body .content .top {
+  margin-bottom: 20px;
+}
+
+#rule .body .content .top .heading-title {
+  color: #131254;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#rule .body .content .top input {
+  padding: 10px 0px 10px 20px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+  outline: none;
+}
+
+#rule .body .content .filter .filter-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#rule .body .content .list-rules .rule {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #131254;
+  padding: 5px 0 5px 0;
+}
+
+#rule .body .content .list-rules .rule .rule-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #131254;
+}
+
+#rule .body .content .list-rules .rule .rule-info h5 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#help .body .item h6 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#help .body .item p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.form-dark .font-small {
+  font-size: 0.8rem;
+}
+
+.form-dark [type="radio"] + label,
+.form-dark [type="checkbox"] + label {
+  font-size: 0.8rem;
+}
+
+.form-dark [type="checkbox"] + label:before {
+  top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.form-dark .md-form label {
+  color: #fff;
+}
+
+.form-dark input[type=email]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+
+.form-dark input[type=email]:focus:not([readonly]) + label {
+  color: #fff;
+}
+
+.form-dark input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+
+.form-dark input[type=password]:focus:not([readonly]) + label {
+  color: #fff;
+}
+
+.form-dark input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  z-index: 0;
+  border: 1.5px solid #fff;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form-dark input[type="checkbox"]:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 12px;
+  height: 22px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent #00c851 #00c851 transparent;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.form-dark .modal-header {
+  border-bottom: none;
+}
+
+#borrowwingmanagement .pending .book-pending {
+  padding: 15px 15px;
+  margin: 15px 15px;
+  border: 2px solid #131254;
+}
+
+#borrowwingmanagement .pending .book-pending .cancelRequestBtn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #131254;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#borrowwingmanagement .borrowing .book-borrowing {
+  padding: 15px 15px;
+  margin: 15px 15px;
+  border: 2px solid #131254;
+}
+
+#borrowwingmanagement .borrowing .book-borrowing .returnBookBtn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #131254;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.open-button {
+  background-color: #FFEC46;
+  color: black;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 300px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.email,
+.name {
+  height: 40px;
+  width: 100%;
+}
+
+.email :focus,
+.name:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+  border-color: #66afe9;
+}
+
+.form-container {
+  max-width: 400px;
+  padding: 10px;
+  background-color: #c3c3c3;
+  height: 600px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 15px;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.container {
+  max-width: 1366px !important;
+}
+
+.container-inner {
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Muli", sans-serif;
+}
+
+.account-btn {
+  display: none;
+}
+
+#homepage header,
+#search header,
+#library header,
+#rule header,
+#help header,
+#new header,
+#response header,
+#accountmanagement header,
+#borrowwingmanagement header, #login header, #borrow header, #admin header, #register header, #accountmanagement header, #forgotPassword header, #reset-password header, #resetPassword header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7A00B3), to(#0E0EB3));
+  background-image: linear-gradient(#7A00B3, #0E0EB3);
+}
+
+#homepage header nav,
+#search header nav,
+#library header nav,
+#rule header nav,
+#help header nav,
+#new header nav,
+#response header nav,
+#accountmanagement header nav,
+#borrowwingmanagement header nav, #login header nav, #borrow header nav, #admin header nav, #register header nav, #accountmanagement header nav, #forgotPassword header nav, #reset-password header nav, #resetPassword header nav {
+  padding: 10px 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e0077), to(#0E0EB3));
+  background-image: linear-gradient(#3e0077, #0E0EB3);
+}
+
+#homepage header nav .nav-left img,
+#search header nav .nav-left img,
+#library header nav .nav-left img,
+#rule header nav .nav-left img,
+#help header nav .nav-left img,
+#new header nav .nav-left img,
+#response header nav .nav-left img,
+#accountmanagement header nav .nav-left img,
+#borrowwingmanagement header nav .nav-left img, #login header nav .nav-left img, #borrow header nav .nav-left img, #admin header nav .nav-left img, #register header nav .nav-left img, #accountmanagement header nav .nav-left img, #forgotPassword header nav .nav-left img, #reset-password header nav .nav-left img, #resetPassword header nav .nav-left img {
+  height: 60px;
+  width: 70px;
+  margin-right: 50px;
+}
+
+#homepage header nav .nav-left ul,
+#search header nav .nav-left ul,
+#library header nav .nav-left ul,
+#rule header nav .nav-left ul,
+#help header nav .nav-left ul,
+#new header nav .nav-left ul,
+#response header nav .nav-left ul,
+#accountmanagement header nav .nav-left ul,
+#borrowwingmanagement header nav .nav-left ul, #login header nav .nav-left ul, #borrow header nav .nav-left ul, #admin header nav .nav-left ul, #register header nav .nav-left ul, #accountmanagement header nav .nav-left ul, #forgotPassword header nav .nav-left ul, #reset-password header nav .nav-left ul, #resetPassword header nav .nav-left ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+#homepage header nav .nav-left ul li,
+#search header nav .nav-left ul li,
+#library header nav .nav-left ul li,
+#rule header nav .nav-left ul li,
+#help header nav .nav-left ul li,
+#new header nav .nav-left ul li,
+#response header nav .nav-left ul li,
+#accountmanagement header nav .nav-left ul li,
+#borrowwingmanagement header nav .nav-left ul li, #login header nav .nav-left ul li, #borrow header nav .nav-left ul li, #admin header nav .nav-left ul li, #register header nav .nav-left ul li, #accountmanagement header nav .nav-left ul li, #forgotPassword header nav .nav-left ul li, #reset-password header nav .nav-left ul li, #resetPassword header nav .nav-left ul li {
+  padding: 0 15px;
+}
+
+#homepage header nav .nav-left ul li a,
+#search header nav .nav-left ul li a,
+#library header nav .nav-left ul li a,
+#rule header nav .nav-left ul li a,
+#help header nav .nav-left ul li a,
+#new header nav .nav-left ul li a,
+#response header nav .nav-left ul li a,
+#accountmanagement header nav .nav-left ul li a,
+#borrowwingmanagement header nav .nav-left ul li a, #login header nav .nav-left ul li a, #borrow header nav .nav-left ul li a, #admin header nav .nav-left ul li a, #register header nav .nav-left ul li a, #accountmanagement header nav .nav-left ul li a, #forgotPassword header nav .nav-left ul li a, #reset-password header nav .nav-left ul li a, #resetPassword header nav .nav-left ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+#homepage header nav .nav-left ul li a:hover,
+#search header nav .nav-left ul li a:hover,
+#library header nav .nav-left ul li a:hover,
+#rule header nav .nav-left ul li a:hover,
+#help header nav .nav-left ul li a:hover,
+#new header nav .nav-left ul li a:hover,
+#response header nav .nav-left ul li a:hover,
+#accountmanagement header nav .nav-left ul li a:hover,
+#borrowwingmanagement header nav .nav-left ul li a:hover, #login header nav .nav-left ul li a:hover, #borrow header nav .nav-left ul li a:hover, #admin header nav .nav-left ul li a:hover, #register header nav .nav-left ul li a:hover, #accountmanagement header nav .nav-left ul li a:hover, #forgotPassword header nav .nav-left ul li a:hover, #reset-password header nav .nav-left ul li a:hover, #resetPassword header nav .nav-left ul li a:hover {
+  color: #131254;
+  text-decoration: none;
+}
+
+#homepage header nav .nav-left ul li:nth-child(5),
+#search header nav .nav-left ul li:nth-child(5),
+#library header nav .nav-left ul li:nth-child(5),
+#rule header nav .nav-left ul li:nth-child(5),
+#help header nav .nav-left ul li:nth-child(5),
+#new header nav .nav-left ul li:nth-child(5),
+#response header nav .nav-left ul li:nth-child(5),
+#accountmanagement header nav .nav-left ul li:nth-child(5),
+#borrowwingmanagement header nav .nav-left ul li:nth-child(5), #login header nav .nav-left ul li:nth-child(5), #borrow header nav .nav-left ul li:nth-child(5), #admin header nav .nav-left ul li:nth-child(5), #register header nav .nav-left ul li:nth-child(5), #accountmanagement header nav .nav-left ul li:nth-child(5), #forgotPassword header nav .nav-left ul li:nth-child(5), #reset-password header nav .nav-left ul li:nth-child(5), #resetPassword header nav .nav-left ul li:nth-child(5) {
+  border-right: unset;
+}
+
+#homepage header nav .nav-right #my-form input::-webkit-search-decoration,
+#homepage header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#search header nav .nav-right #my-form input::-webkit-search-decoration,
+#search header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#library header nav .nav-right #my-form input::-webkit-search-decoration,
+#library header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#rule header nav .nav-right #my-form input::-webkit-search-decoration,
+#rule header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#help header nav .nav-right #my-form input::-webkit-search-decoration,
+#help header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#new header nav .nav-right #my-form input::-webkit-search-decoration,
+#new header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#response header nav .nav-right #my-form input::-webkit-search-decoration,
+#response header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#accountmanagement header nav .nav-right #my-form input::-webkit-search-decoration,
+#accountmanagement header nav .nav-right #my-form input::-webkit-search-cancel-button,
+#borrowwingmanagement header nav .nav-right #my-form input::-webkit-search-decoration,
+#borrowwingmanagement header nav .nav-right #my-form input::-webkit-search-cancel-button, #login header nav .nav-right #my-form input::-webkit-search-decoration,
+#login header nav .nav-right #my-form input::-webkit-search-cancel-button, #borrow header nav .nav-right #my-form input::-webkit-search-decoration,
+#borrow header nav .nav-right #my-form input::-webkit-search-cancel-button, #admin header nav .nav-right #my-form input::-webkit-search-decoration,
+#admin header nav .nav-right #my-form input::-webkit-search-cancel-button, #register header nav .nav-right #my-form input::-webkit-search-decoration,
+#register header nav .nav-right #my-form input::-webkit-search-cancel-button, #accountmanagement header nav .nav-right #my-form input::-webkit-search-decoration,
+#accountmanagement header nav .nav-right #my-form input::-webkit-search-cancel-button, #forgotPassword header nav .nav-right #my-form input::-webkit-search-decoration,
+#forgotPassword header nav .nav-right #my-form input::-webkit-search-cancel-button, #reset-password header nav .nav-right #my-form input::-webkit-search-decoration,
+#reset-password header nav .nav-right #my-form input::-webkit-search-cancel-button, #resetPassword header nav .nav-right #my-form input::-webkit-search-decoration,
+#resetPassword header nav .nav-right #my-form input::-webkit-search-cancel-button {
+  display: none;
+}
+
+#homepage header nav .nav-right #my-form input[type=search],
+#search header nav .nav-right #my-form input[type=search],
+#library header nav .nav-right #my-form input[type=search],
+#rule header nav .nav-right #my-form input[type=search],
+#help header nav .nav-right #my-form input[type=search],
+#new header nav .nav-right #my-form input[type=search],
+#response header nav .nav-right #my-form input[type=search],
+#accountmanagement header nav .nav-right #my-form input[type=search],
+#borrowwingmanagement header nav .nav-right #my-form input[type=search], #login header nav .nav-right #my-form input[type=search], #borrow header nav .nav-right #my-form input[type=search], #admin header nav .nav-right #my-form input[type=search], #register header nav .nav-right #my-form input[type=search], #accountmanagement header nav .nav-right #my-form input[type=search], #forgotPassword header nav .nav-right #my-form input[type=search], #reset-password header nav .nav-right #my-form input[type=search], #resetPassword header nav .nav-right #my-form input[type=search] {
+  width: 15px;
+  padding-left: 10px;
+  color: transparent;
+  cursor: pointer;
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-appearance: textfield;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+#homepage header nav .nav-right #my-form input[type=search]:hover,
+#search header nav .nav-right #my-form input[type=search]:hover,
+#library header nav .nav-right #my-form input[type=search]:hover,
+#rule header nav .nav-right #my-form input[type=search]:hover,
+#help header nav .nav-right #my-form input[type=search]:hover,
+#new header nav .nav-right #my-form input[type=search]:hover,
+#response header nav .nav-right #my-form input[type=search]:hover,
+#accountmanagement header nav .nav-right #my-form input[type=search]:hover,
+#borrowwingmanagement header nav .nav-right #my-form input[type=search]:hover, #login header nav .nav-right #my-form input[type=search]:hover, #borrow header nav .nav-right #my-form input[type=search]:hover, #admin header nav .nav-right #my-form input[type=search]:hover, #register header nav .nav-right #my-form input[type=search]:hover, #accountmanagement header nav .nav-right #my-form input[type=search]:hover, #forgotPassword header nav .nav-right #my-form input[type=search]:hover, #reset-password header nav .nav-right #my-form input[type=search]:hover, #resetPassword header nav .nav-right #my-form input[type=search]:hover {
+  background-color: #fff;
+}
+
+#homepage header nav .nav-right #my-form input[type=search]:focus,
+#search header nav .nav-right #my-form input[type=search]:focus,
+#library header nav .nav-right #my-form input[type=search]:focus,
+#rule header nav .nav-right #my-form input[type=search]:focus,
+#help header nav .nav-right #my-form input[type=search]:focus,
+#new header nav .nav-right #my-form input[type=search]:focus,
+#response header nav .nav-right #my-form input[type=search]:focus,
+#accountmanagement header nav .nav-right #my-form input[type=search]:focus,
+#borrowwingmanagement header nav .nav-right #my-form input[type=search]:focus, #login header nav .nav-right #my-form input[type=search]:focus, #borrow header nav .nav-right #my-form input[type=search]:focus, #admin header nav .nav-right #my-form input[type=search]:focus, #register header nav .nav-right #my-form input[type=search]:focus, #accountmanagement header nav .nav-right #my-form input[type=search]:focus, #forgotPassword header nav .nav-right #my-form input[type=search]:focus, #reset-password header nav .nav-right #my-form input[type=search]:focus, #resetPassword header nav .nav-right #my-form input[type=search]:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+}
+
+#homepage header nav .nav-right #my-form input:-moz-placeholder,
+#search header nav .nav-right #my-form input:-moz-placeholder,
+#library header nav .nav-right #my-form input:-moz-placeholder,
+#rule header nav .nav-right #my-form input:-moz-placeholder,
+#help header nav .nav-right #my-form input:-moz-placeholder,
+#new header nav .nav-right #my-form input:-moz-placeholder,
+#response header nav .nav-right #my-form input:-moz-placeholder,
+#accountmanagement header nav .nav-right #my-form input:-moz-placeholder,
+#borrowwingmanagement header nav .nav-right #my-form input:-moz-placeholder, #login header nav .nav-right #my-form input:-moz-placeholder, #borrow header nav .nav-right #my-form input:-moz-placeholder, #admin header nav .nav-right #my-form input:-moz-placeholder, #register header nav .nav-right #my-form input:-moz-placeholder, #accountmanagement header nav .nav-right #my-form input:-moz-placeholder, #forgotPassword header nav .nav-right #my-form input:-moz-placeholder, #reset-password header nav .nav-right #my-form input:-moz-placeholder, #resetPassword header nav .nav-right #my-form input:-moz-placeholder {
+  color: transparent;
+}
+
+#homepage header nav .nav-right #my-form input::-webkit-input-placeholder,
+#search header nav .nav-right #my-form input::-webkit-input-placeholder,
+#library header nav .nav-right #my-form input::-webkit-input-placeholder,
+#rule header nav .nav-right #my-form input::-webkit-input-placeholder,
+#help header nav .nav-right #my-form input::-webkit-input-placeholder,
+#new header nav .nav-right #my-form input::-webkit-input-placeholder,
+#response header nav .nav-right #my-form input::-webkit-input-placeholder,
+#accountmanagement header nav .nav-right #my-form input::-webkit-input-placeholder,
+#borrowwingmanagement header nav .nav-right #my-form input::-webkit-input-placeholder, #login header nav .nav-right #my-form input::-webkit-input-placeholder, #borrow header nav .nav-right #my-form input::-webkit-input-placeholder, #admin header nav .nav-right #my-form input::-webkit-input-placeholder, #register header nav .nav-right #my-form input::-webkit-input-placeholder, #accountmanagement header nav .nav-right #my-form input::-webkit-input-placeholder, #forgotPassword header nav .nav-right #my-form input::-webkit-input-placeholder, #reset-password header nav .nav-right #my-form input::-webkit-input-placeholder, #resetPassword header nav .nav-right #my-form input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#homepage header nav .nav-right .login-btn,
+#search header nav .nav-right .login-btn,
+#library header nav .nav-right .login-btn,
+#rule header nav .nav-right .login-btn,
+#help header nav .nav-right .login-btn,
+#new header nav .nav-right .login-btn,
+#response header nav .nav-right .login-btn,
+#accountmanagement header nav .nav-right .login-btn,
+#borrowwingmanagement header nav .nav-right .login-btn, #login header nav .nav-right .login-btn, #borrow header nav .nav-right .login-btn, #admin header nav .nav-right .login-btn, #register header nav .nav-right .login-btn, #accountmanagement header nav .nav-right .login-btn, #forgotPassword header nav .nav-right .login-btn, #reset-password header nav .nav-right .login-btn, #resetPassword header nav .nav-right .login-btn {
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #131254;
+  color: white !important;
+  text-decoration: none;
+}
+
+#homepage header nav .nav-right .login-btn:hover,
+#search header nav .nav-right .login-btn:hover,
+#library header nav .nav-right .login-btn:hover,
+#rule header nav .nav-right .login-btn:hover,
+#help header nav .nav-right .login-btn:hover,
+#new header nav .nav-right .login-btn:hover,
+#response header nav .nav-right .login-btn:hover,
+#accountmanagement header nav .nav-right .login-btn:hover,
+#borrowwingmanagement header nav .nav-right .login-btn:hover, #login header nav .nav-right .login-btn:hover, #borrow header nav .nav-right .login-btn:hover, #admin header nav .nav-right .login-btn:hover, #register header nav .nav-right .login-btn:hover, #accountmanagement header nav .nav-right .login-btn:hover, #forgotPassword header nav .nav-right .login-btn:hover, #reset-password header nav .nav-right .login-btn:hover, #resetPassword header nav .nav-right .login-btn:hover {
+  background-color: #5945FF;
+}
+
+#homepage header .banner img,
+#search header .banner img,
+#library header .banner img,
+#rule header .banner img,
+#help header .banner img,
+#new header .banner img,
+#response header .banner img,
+#accountmanagement header .banner img,
+#borrowwingmanagement header .banner img, #login header .banner img, #borrow header .banner img, #admin header .banner img, #register header .banner img, #accountmanagement header .banner img, #forgotPassword header .banner img, #reset-password header .banner img, #resetPassword header .banner img {
+  max-width: 1172px;
+}
+
+#homepage footer,
+#search footer,
+#library footer,
+#rule footer,
+#help footer,
+#new footer,
+#response footer,
+#accountmanagement footer,
+#borrowwingmanagement footer, #login footer, #borrow footer, #admin footer, #register footer, #accountmanagement footer, #forgotPassword footer, #reset-password footer, #resetPassword footer {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e0077), to(#0E0EB3));
+  background-image: linear-gradient(#3e0077, #0E0EB3);
+  color: white;
+}
+
+#homepage footer .content,
+#search footer .content,
+#library footer .content,
+#rule footer .content,
+#help footer .content,
+#new footer .content,
+#response footer .content,
+#accountmanagement footer .content,
+#borrowwingmanagement footer .content, #login footer .content, #borrow footer .content, #admin footer .content, #register footer .content, #accountmanagement footer .content, #forgotPassword footer .content, #reset-password footer .content, #resetPassword footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#homepage footer p,
+#search footer p,
+#library footer p,
+#rule footer p,
+#help footer p,
+#new footer p,
+#response footer p,
+#accountmanagement footer p,
+#borrowwingmanagement footer p, #login footer p, #borrow footer p, #admin footer p, #register footer p, #accountmanagement footer p, #forgotPassword footer p, #reset-password footer p, #resetPassword footer p {
+  font-size: 18px;
+  color: white;
+}
+
+.mb-4, .my-4 {
+  margin-bottom: 0 !important;
+}
+/*# sourceMappingURL=style.css.map */
